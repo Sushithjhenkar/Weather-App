@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background: #e4e9f7;
+  background: #4B515D;
   height: 100vh;
   margin: 0;
 }
@@ -18,6 +18,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.forms {
+  width: 300px;
 }
 
 input#city {
