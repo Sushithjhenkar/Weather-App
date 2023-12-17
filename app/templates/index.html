@@ -25,14 +25,17 @@
                 <div>
                     {% if city and weather_data %}
                         <h2>Weather in {{ city }}:</h2>
-                        <p>Climate: {{ weather_data['weather'][0]['description'] }}</p>
-                        <p>Overcast: {{ weather_data['weather'][0]['main'] }}</p>
-                        <p>Temperature: {{ weather_data['main']['temp'] }}</p>
-                        <p>Feels like: {{ weather_data['main']['feels_like'] }}</p>
+                        <p>Climate: {{ weather_data['weather'][0]['description']}}</p>
+                        <p>Overcast: {{ weather_data['weather'][0]['main']}}</p>
+                        <p>Temperature: {{ weather_data['main']['temp'] }}&degK</p>
+                        <p>Feels like: {{ weather_data['main']['feels_like']}}&degK</p>
                         <p>Pressure: {{ weather_data['main']['pressure'] }}</p>
                         <p>Humidity: {{ weather_data['main']['humidity'] }}</p>
                         <p>Wind speed: {{ weather_data['wind']['speed'] }}</p>
-                        <!--<p>{{weather_data}}</p>-->
+                        <p>Local Date: {{ time_data['day_of_week'] }},{{ time_data['date'] }}</p>
+                        <p>Local Time: {{ time_data['hour'] }}:{{ time_data['minute'] }}:{{ time_data['second'] }}</p>
+                        <p>Timezone: {{ time_data['timezone'] }}</p>
+
                     {% elif city %}
                         <p>No weather data available for {{ city }}. Please check the city name.</p>
                     {% endif %}
