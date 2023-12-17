@@ -12,14 +12,14 @@ Welcome to the Weather-App, a simple yet effective weather application built usi
 * Explore real-time weather updates for any location.
 
 ## Technologies Used 💻
-* Flask: [For backend]('')
+* Flask: [For backend]('https://flask.palletsprojects.com/en/3.0.x/')
 * HTML & CSS: For the frontend design.
 * Vercel: For live hosting.
 
 ## Contributors ✨
 A big thank you to the contributors who have helped make this project better:
 
-[@ajaykumar]('')
+[@ajaykumar]('https://github.com/ajaykumar-br')
 
 ## Contributing 🤝
 If you would like to contribute to the project, please follow these steps:
@@ -29,10 +29,10 @@ If you would like to contribute to the project, please follow these steps:
 * Make your changes and submit a pull request.
 
 ## Acknowledgments 🙏
-Special thanks to [OpenWeather]('') for providing the weather data API.
+Special thanks to [OpenWeather]('https://openweathermap.org/api') for providing the weather data API.
 
 ## License 📄
-This project is licensed under the MIT License - see the [LICENSE]('') file for details.
+This project is licensed under the MIT License - see the [LICENSE]('LICENSE') file for details.
 
 ## Contact 📧
 For any inquiries or suggestions, feel free to contact us at sushithjhenkar@gmail.com.
