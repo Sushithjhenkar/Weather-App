@@ -20,9 +20,13 @@ body {
     justify-content: center;
 }
 
-.forms {
+.inner-wrapper {
   width: 300px;
 }
+
+/* .forms {
+  width: 300px;
+} */
 
 input#city {
     padding: 10px 20px;
@@ -53,6 +57,10 @@ input#city {
   width: 300px;
   text-align: center;
   margin-top: 20px;
+}
+
+.weather-card p {
+  margin: 0;
 }
 
 .weather-icon {
