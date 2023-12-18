@@ -20,9 +20,14 @@ def get_weather_data(city_name):
 
     if response.status_code == 200:
         weather_data = response.json()
-        weather_description = weather_data['weather'][0]['description']
-        temperature_kelvin = weather_data['main']['temp']
-        temperature_celsius = temperature_kelvin - 273.15
+
+        # converting temperature into Fahrenheit
+        weather_data['main']['temp'] = int((weather_data['main']['temp'] - 273.15) *1.8 +32)
+        weather_data['main']['feels_like'] = int((weather_data['main']['feels_like'] - 273.15) *1.8 +32)
+
+        # below are other things that were given by the API
+        # weather_data['main']['temp_min'] = int((weather_data['main']['temp_min'] - 273.15) *1.8 +32)
+        # weather_data['main']['temp_max'] = int((weather_data['main']['temp_max'] - 273.15) *1.8 +32)
         return weather_data
     else:
         return None
