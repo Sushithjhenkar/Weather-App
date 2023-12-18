@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "app/**", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/api/(.*)", "dest": "/app/$1", "methods": ["GET", "POST", "PUT", "DELETE"] }
+  ]
+}
