@@ -45,9 +45,12 @@
                                         <div class="info">
                                             <div>Wind: {{ weather_data['wind']['speed'] }} km/h</div>
                                             <div>Humidity: {{ weather_data['main']['humidity'] }} %</div>
-                                            <div>Feels: {{ weather_data['main']['feels_like'] }}°F</div>
+                                            <div>Feels Like: {{ weather_data['main']['feels_like'] }}°F</div>
+                                            <div>Local Date: {{ time_data['day_of_week'] }},{{ time_data['date'] }}</div>
+                                            <div>Local Time: {{ time_data['hour'] }}:{{ time_data['minute'] }}:{{ time_data['second'] }}</div>
+                                            <div>Timezone: {{ time_data['timezone'] }}</div>
                                         </div>
-                                    </div>
+                                </div>
                                     {% elif city %}
                                     <div class="weather-card">
                                         <p>No weather data available for {{ city }}. Please check the city name.</p>
