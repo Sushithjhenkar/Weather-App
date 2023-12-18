@@ -7,11 +7,9 @@ Welcome to the Weather-App, a simple yet effective weather application built usi
 - **Real-time Weather Updates:** Get up-to-date weather information for any location.
 - **User-Friendly Interface:** A clean and intuitive UI for a seamless user experience.
 - **Responsive Design:** Access the weather details on various devices with ease.
-- **Live Hosting on Vercel:** The website is live-hosted on [Vercel](https://vercel.com/) for easy access.
 
 ## How to Use 🤔
 
-- Visit the live website: [Weather-App Live](https://your-vercel-app-url.vercel.app/).
 - Explore real-time weather updates for any location.
 
 ## Technologies Used 💻
